@@ -184,7 +184,7 @@ public class PartidosNba implements Serializable {
 
         System.out.println("Resultados del dia " + getFecha());
 
-        for(int i=0;i<2;i++){
+        for(int i=0;i<4;i++){
             for (int j=0;j<2;j++){
                 if (resultados[i][j] != 0)
                 System.out.println(partidosDelDia[i][j].getNombre()+ " "+ resultados[i][j]);
