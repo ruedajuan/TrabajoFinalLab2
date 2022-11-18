@@ -72,6 +72,55 @@ public class Main {
         Knicks.agregarJugadores(j43);
         Knicks.agregarJugadores(j44);
         Knicks.agregarJugadores(j45);
+	     //Golden State Warriors
+        Jugadores j51 = new Jugadores("Stephen","Curry","1,90 m",30);
+        Jugadores j52 = new Jugadores("Klay","Thompson","1,95 m",11);
+        Jugadores j53 = new Jugadores("Draymon","Green","1,98 m",23);
+        Jugadores j54 = new Jugadores("Andrew", "Wiggins","2,01 m",22);
+        Jugadores j55 = new Jugadores("Kevon","Looney","2,06 m",5);
+        //Se agregan los jugadores a la plantilla del equipo
+        Warriors.agregarJugadores(j51);
+        Warriors.agregarJugadores(j52);
+        Warriors.agregarJugadores(j53);
+        Warriors.agregarJugadores(j54);
+        Warriors.agregarJugadores(j55);
+
+        //Brooklyn Nets
+
+        Jugadores j61 = new Jugadores("Kevin","Durant","2,08 m",7);
+        Jugadores j62 = new Jugadores("Kyrie","Irving","1,88 m",11);
+        Jugadores j63 = new Jugadores("Nick","Claxton","2,11 m",33);
+        Jugadores j64 = new Jugadores("Joe", "Harris","1,98 m",12);
+        Jugadores j65 = new Jugadores("Royce","O'Neale","1,96 m",00);
+
+        Nets.agregarJugadores(j61);
+        Nets.agregarJugadores(j62);
+        Nets.agregarJugadores(j63);
+        Nets.agregarJugadores(j64);
+        Nets.agregarJugadores(j65);
+        //Chicago Bulls
+        Jugadores j71 = new Jugadores("Demar","DeRonzan","1,98 m",11);
+        Jugadores j72 = new Jugadores("Zach","Levine","1,96 m",8);
+        Jugadores j73 = new Jugadores("Nikola","Vucevic","2,08 m",9);
+        Jugadores j74 = new Jugadores("Ayo", "Dosunmu","1,93 m",12);
+        Jugadores j75 = new Jugadores("Alex","Caruso","1,96 m",6);
+
+        Bulls.agregarJugadores(j71);
+        Bulls.agregarJugadores(j72);
+        Bulls.agregarJugadores(j73);
+        Bulls.agregarJugadores(j74);
+        Bulls.agregarJugadores(j75);
+        //Philadelphia 76Sixers
+        Jugadores j81 = new Jugadores("Joel","Embiid","2,13 m",21);
+        Jugadores j82 = new Jugadores("James","Harden","1,96 m",1);
+        Jugadores j83 = new Jugadores("Tyrese","Maxey","1,88 m",0);
+        Jugadores j84 = new Jugadores("PJ", "Tucker","1,96 m",17);
+        Jugadores j85 = new Jugadores("Tobias","Harris","2,01 m",12);
+        Sixers.agregarJugadores(j81);
+        Sixers.agregarJugadores(j82);
+        Sixers.agregarJugadores(j83);
+        Sixers.agregarJugadores(j84);
+        Sixers.agregarJugadores(j85);
 
         //Estats de partidos
 
@@ -79,6 +128,7 @@ public class Main {
         d1.agregarPartidos(Lakers,CLipers);
         d1.agregarPartidos(Celtics,Knicks);
         d1.agregarPartidos(Warriors,Nets);
+	d1.agregarPartidos(Sixers,Bulls);
         int[][]Lakersd1={{Lakers.getPlantilla().get(0).getDorsal(),20,12,12},
                          {Lakers.getPlantilla().get(1).getDorsal(),15,11,10},
                          {Lakers.getPlantilla().get(2).getDorsal(),25,1,12},
@@ -107,11 +157,43 @@ public class Main {
                 {Knicks.getPlantilla().get(4).getDorsal(),16,5,21},
                 {Knicks.getCodigo(),0,0,0},
         };
+	int[][]Warriorsd1={{Warriors.getPlantilla().get(0).getDorsal(),50,12,12},
+                {Warriors.getPlantilla().get(1).getDorsal(),15,11,10},
+                {Warriors.getPlantilla().get(2).getDorsal(),25,1,2},
+                {Warriors.getPlantilla().get(3).getDorsal(),5,5,4},
+                {Warriors.getPlantilla().get(4).getDorsal(),19,6,0},
+                {Warriors.getCodigo(),0,0,0},
+        };
+        int[][]Netsd1={{Nets.getPlantilla().get(0).getDorsal(),38,12,12},
+                {Nets.getPlantilla().get(1).getDorsal(),5,1,1},
+                {Nets.getPlantilla().get(2).getDorsal(),16,2,22},
+                {Nets.getPlantilla().get(3).getDorsal(),23,10,4},
+                {Nets.getPlantilla().get(4).getDorsal(),17,5,21},
+                {Nets.getCodigo(),0,0,0},
+        };
+        int[][]Bullsd1={{Bulls.getPlantilla().get(0).getDorsal(),15,2,2},
+                {Bulls.getPlantilla().get(1).getDorsal(),32,1,17},
+                {Bulls.getPlantilla().get(2).getDorsal(),4,1,12},
+                {Bulls.getPlantilla().get(3).getDorsal(),51,5,14},
+                {Bulls.getPlantilla().get(4).getDorsal(),19,6,20},
+                {Bulls.getCodigo(),0,0,0},
+        };
+        int[][]Sixersd1={{Sixers.getPlantilla().get(0).getDorsal(),68,12,22},
+                {Sixers.getPlantilla().get(1).getDorsal(),35,11,10},
+                {Sixers.getPlantilla().get(2).getDorsal(),5,2,2},
+                {Sixers.getPlantilla().get(3).getDorsal(),9,5,3},
+                {Sixers.getPlantilla().get(4).getDorsal(),6,5,1},
+                {Sixers.getCodigo(),0,0,0},
+        };
 
         d1.agregarEstadEquipo(Lakersd1,Lakers);
         d1.agregarEstadEquipo(Clipersd1,CLipers);
         d1.agregarEstadEquipo(Celticsd1,Celtics);
         d1.agregarEstadEquipo(Knicksd1,Knicks);
+	d1.agregarEstadEquipo(Warriorsd1,Warriors);
+        d1.agregarEstadEquipo(Netsd1,Nets);
+        d1.agregarEstadEquipo(Bullsd1,Bulls);
+        d1.agregarEstadEquipo(Sixersd1,Sixers);
         d1.resultadosPartidos();
         d1.mostrarResultados();
         d1.mostrarDesempeñoJugadores(Lakers);
